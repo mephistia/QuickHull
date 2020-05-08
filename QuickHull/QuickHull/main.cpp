@@ -154,7 +154,7 @@ int main() {
 	Point center = hull.front();
 
 	for (Point &p : hull) {
-		float angle = center.getAngleWith(p);
+		double angle = center.getAngleWith(p);
 		p.angle = angle;
 	}
 
@@ -230,7 +230,7 @@ int main() {
 	Point center2 = hull2.front();
 
 	for (Point &p : hull2) {
-		float angle = center2.getAngleWith(p);
+		double angle = center2.getAngleWith(p);
 		p.angle = angle;
 	}
 

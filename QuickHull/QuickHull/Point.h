@@ -1,3 +1,4 @@
+#define _USE_MATH_DEFINES
 #pragma once
 class Point
 {
@@ -14,11 +15,12 @@ public:
 
 	bool operator < (const Point &P);
 
-	float getAngleWith(Point &P);
+	double getAngleWith(Point &P);
 
 
 
 
-	float x, y, angle;
+	float x, y;
+	double angle;
 };
 

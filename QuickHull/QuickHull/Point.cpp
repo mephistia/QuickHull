@@ -30,13 +30,13 @@ bool Point::operator<(const Point & P)
 	return(angle < P.angle);
 }
 
-float Point::getAngleWith(Point & P)
+double Point::getAngleWith(Point & P)
 {
 	if (P.x == x) { 
 		return 0; 
 	}
 
-	return (atan(float(P.y - y) / float(P.x - x)));
+	return atan2(P.y - y, P.y - x) * 180 / M_PI;
 
 }
 
